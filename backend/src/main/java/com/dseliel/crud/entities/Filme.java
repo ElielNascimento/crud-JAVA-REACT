@@ -3,6 +3,7 @@ package com.dseliel.crud.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,6 +21,7 @@ public class Filme implements Serializable {
 	private Long id;
 
 	@NotBlank(message = "O campo nome não pode ficar em branco")
+	@Column(unique = true)
 	private String nome;
 	@NotBlank(message = "O campo categoria não pode ficar em branco")
 	private String categoria;

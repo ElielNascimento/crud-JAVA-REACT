@@ -66,7 +66,7 @@ class Filme extends React.Component {
         this.buscarFilmes();
         alert("Filme cadastrado com sucesso!");
       } else {
-        alert("Campos em brancos não aceitos.");
+        alert("Nome do filme já cadastrado.");
       }
     });
   };
