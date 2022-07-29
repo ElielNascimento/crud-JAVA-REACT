@@ -22,7 +22,7 @@ class Filme extends React.Component {
   componentWillUnmount() {}
 
   buscarFilmes = () => {
-    fetch("https://elielbn-crud.herokuapp.com//api/filmes")
+    fetch("http://localhost:8080/api/filmes")
       .then((resposta) => resposta.json())
       .then((dados) => {
         this.setState({ filmes: dados });
@@ -30,7 +30,7 @@ class Filme extends React.Component {
   };
 
   deletarFilme = (id) => {
-    fetch("https://elielbn-crud.herokuapp.com//api/filmes/" + id, { method: "DELETE" }).then(
+    fetch("http://localhost:8080/api/filmes/" + id, { method: "DELETE" }).then(
       (resposta) => {
         if (resposta.ok) {
           alert("Filme deletado com sucesso!");
@@ -44,7 +44,7 @@ class Filme extends React.Component {
   };
 
   carregarDados = (id) => {
-    fetch("https://elielbn-crud.herokuapp.com//api/filmes/" + id, { method: 'GET' })
+    fetch("http://localhost:8080/api/filmes/" + id, { method: 'GET' })
       .then((resposta) => resposta.json())
       .then((filme) => {
         this.setState({
@@ -57,7 +57,7 @@ class Filme extends React.Component {
   };
 
   cadastrarFilme = (filme) => {
-    fetch("https://elielbn-crud.herokuapp.com//api/filmes", {
+    fetch("http://localhost:8080/api/filmes", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(filme),
@@ -72,7 +72,7 @@ class Filme extends React.Component {
   };
 
   atualizarFilme = (filme) => {
-    fetch("https://elielbn-crud.herokuapp.com//api/filmes/" +filme.id, {
+    fetch("http://localhost:8080/api/filmes/" +filme.id, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(filme),
