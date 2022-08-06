@@ -3,6 +3,9 @@ import { Table, Button, Form, Modal } from "react-bootstrap";
 import { BASE_URL } from "./resquests";
 import "./styles.css";
 
+import { MdDelete } from "react-icons/md";
+import { BiEditAlt } from "react-icons/bi";
+
 class Filme extends React.Component {
   constructor(props) {
     super(props);
@@ -101,19 +104,17 @@ class Filme extends React.Component {
               <td>{filme.nome}</td>
               <td>{filme.categoria}</td>
               <td>
-                <Button
+                <BiEditAlt
+                  className="btn_atualizar"
                   variant="success"
                   onClick={() => this.carregarDados(filme.id)}
-                >
-                  Atualizar
-                </Button>
-                <> </>
-                <Button
+                ></BiEditAlt>
+
+                <MdDelete
+                  className="btn_delete"
                   variant="danger"
                   onClick={() => this.deletarFilme(filme.id)}
-                >
-                  Excluir
-                </Button>
+                ></MdDelete>
               </td>
             </tr>
           ))}
@@ -227,12 +228,7 @@ class Filme extends React.Component {
           </Modal.Footer>
         </Modal>
 
-        <Button
-          className="button"
-          variant="info"
-          type="submit"
-          onClick={this.reset}
-        >
+        <Button className="test" onClick={this.reset}>
           Novo
         </Button>
         <p></p>
