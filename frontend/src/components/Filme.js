@@ -3,7 +3,6 @@ import { Table, Button, Form, Modal } from "react-bootstrap";
 import { BASE_URL } from "./resquests";
 import "./styles.css";
 
-
 class Filme extends React.Component {
   constructor(props) {
     super(props);
@@ -46,7 +45,7 @@ class Filme extends React.Component {
   };
 
   carregarDados = (id) => {
-    fetch(`${BASE_URL}/api/filmes/` + id, { method: 'GET' })
+    fetch(`${BASE_URL}/api/filmes/` + id, { method: "GET" })
       .then((resposta) => resposta.json())
       .then((filme) => {
         this.setState({
@@ -74,7 +73,7 @@ class Filme extends React.Component {
   };
 
   atualizarFilme = (filme) => {
-    fetch(`${BASE_URL}/api/filmes/`+filme.id, {
+    fetch(`${BASE_URL}/api/filmes/` + filme.id, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(filme),
