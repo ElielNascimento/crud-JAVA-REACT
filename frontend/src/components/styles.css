@@ -1,29 +1,30 @@
 .button {
-    margin: 0 3px;
-    margin-top: 15px;
+    margin-left: 15%;
     width: 130px;
+   
 }
 
 .btn_delete {
     width: 40px;
-    color: rgb(226, 205, 43);
+    color:#696969;
+    margin-left: 20%;
     font-size: 40px;
 }
 
 .btn_delete:hover {
-    background-color: rgba(255, 98, 7, 0.927);
+    background-color: rgba(191, 34, 34, 0.927);
     transition: 4.s;
-    border: 10px;
 }
 
 .btn_atualizar {
     width: 40px;
-    color: rgb(95, 43, 226);
+    color:#696969;
     font-size: 40px;
+    margin-left: 35%;
 }
 
 .btn_atualizar:hover {
-    background-color: rgba(227, 103, 1, 0.927);
+    background-color: rgba(245, 220, 110, 0.922);
     transition: 4.s;
 }
 
