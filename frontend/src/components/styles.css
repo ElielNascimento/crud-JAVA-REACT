@@ -8,7 +8,7 @@
 
 .btn_delete:hover {
     background-color: rgba(191, 34, 34, 0.927);
-    transition: 4.s;
+    transition: 1.s;
 }
 
 .btn_atualizar {
@@ -20,7 +20,7 @@
 
 .btn_atualizar:hover {
     background-color: rgba(245, 220, 110, 0.922);
-    transition: 4.s;
+    transition: 1.s;
 }
 
 h1 {
