@@ -1,11 +1,6 @@
-.button {
-    margin-left: 15%;
-    width: 130px;
-   
-}
 
 .btn_delete {
-    width: 35px;
+    width: 30px;
     color:#696969;
     margin-left: 18%;
     font-size: 40px;
@@ -17,7 +12,7 @@
 }
 
 .btn_atualizar {
-    width: 35px;
+    width: 30px;
     color:#696969;
     font-size: 40px;
     margin-left: 38%;
