@@ -27,6 +27,9 @@
     padding: 7px;
     border-radius: 5px;
     margin: 10px;
-
 }
 
+* h2 {
+margin-left: 160px;
+color: rgb(0, 0, 0);
+}

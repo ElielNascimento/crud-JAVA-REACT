@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="container">
-      <h1>APLICAÇÃO REACT + JAVA + SPRINGBOOT</h1>
+      <h2>APLICAÇÃO REACT + JAVA + SPRINGBOOT </h2>
       <NavBar/>
       <Filme />
      
