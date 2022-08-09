@@ -112,7 +112,7 @@ class Filme extends React.Component {
                 <MdDelete className="btn_delete"
                   variant="primary"
                   onClick={() => this.deletarFilme(filme.id)}
-></MdDelete>
+                                                             ></MdDelete>
               </td>
             </tr>
           ))}
