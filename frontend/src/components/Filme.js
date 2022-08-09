@@ -177,7 +177,7 @@ class Filme extends React.Component {
       <div>
         <Modal show={this.state.modalAberta} onHide={this.fecharModal}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>Cadastro de Filme</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form>
