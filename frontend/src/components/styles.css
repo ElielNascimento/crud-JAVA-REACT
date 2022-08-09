@@ -1,7 +1,7 @@
 .btn_delete {
     width: 30px;
     color: #f00909;
-    margin-left: 18%;
+    margin-left: 15%;
     font-size: 40px;
 }
 
@@ -14,7 +14,7 @@
     width: 30px;
     color: #240fc6;
     font-size: 40px;
-    margin-left: 38%;
+    margin-left: 35%;
 }
 
 .btn_atualizar:hover {
