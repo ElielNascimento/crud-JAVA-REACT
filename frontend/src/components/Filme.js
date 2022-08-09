@@ -104,15 +104,17 @@ class Filme extends React.Component {
               <td>{filme.nome}</td>
               <td>{filme.categoria}</td>
               <td>
-                <BiEditAlt className="btn_atualizar"
+                <BiEditAlt
+                  className="btn_atualizar"
                   variant="success"
                   onClick={() => this.carregarDados(filme.id)}
                 ></BiEditAlt>
 
-                <MdDelete className="btn_delete"
-                  variant="danger"
+                <MdDelete
+                  className="btn_delete"
+                  variant="primary"
                   onClick={() => this.deletarFilme(filme.id)}
-></MdDelete>
+                ></MdDelete>
               </td>
             </tr>
           ))}
@@ -226,8 +228,8 @@ class Filme extends React.Component {
           </Modal.Footer>
         </Modal>
 
-        <Button className="btn_novo"
-      
+        <Button
+          className="btn_novo"
           variant="info"
           type="submit"
           onClick={this.reset}
